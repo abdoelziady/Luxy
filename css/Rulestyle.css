@@ -1,0 +1,232 @@
+/* ======================================= */
+/* ======================================= */
+/* Local Variables  */
+:root
+{
+    --maincolor:#FFCA00;
+    --seccolor:#233132;
+    --secbackcolor:rgb(250, 249, 249);
+    --mainpt:60px;
+    --mainpb:60px;
+    --trans: all .5s ease-in-out;
+}
+/* Local Variables  */
+/* ======================================= */
+/* ======================================= */
+/* Start Gloabal Rules */
+html 
+{
+    scroll-behavior: smooth;
+}
+* 
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.container
+{
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.global_para
+{
+    color: #999;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+}
+.global_head 
+{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: var(--seccolor);
+}
+/* End Gloabal Rules */
+/* ======================================= */
+/* ======================================= */
+/* Start media Query */
+/* =============================== */
+/* Small Screen */
+/* ============================== */
+@media (min-width: 768px)
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+/* =============================== */
+/* Medium Screen */
+/* ============================== */
+@media (min-width: 991px)
+{
+    .container
+    {
+        width: 900px;
+    }
+}
+/* =============================== */
+/* large Screen */
+/* ============================== */
+@media (min-width:1200px)
+{
+    .container
+    {
+        width: 1250px;
+    }
+}
+/* ===================================== */
+/* ===================================== */
+@media (max-width:1119px)
+{
+    .navbar .navbar_content ,
+    .slider .slider_scroll
+    {
+        display: none;
+    }
+    .appartiments .cont
+{
+grid-template-columns: repeat(2,minmax(250px,1fr));
+grid-template-rows: repeat(3,minmax(250px,1fr));
+}
+    
+}
+/* ===================================== */
+@media (max-width:992px)
+{
+    .navbar .navbar_area
+    {
+        display: none;
+    }
+    .slider .slider_rightContent p
+{
+   padding:15px 20px;
+   width: 220px;
+}
+.slider .slider_rightContent p > i
+{
+    margin-right: 15px;
+}
+.appartiments .container:last-of-type form > button:last-of-type
+{
+   margin-left: 0px;
+}
+.work .work_Head , 
+.Services .Services_Head ,
+.agents .agents_Head
+{
+width: 100%;
+}
+.Services .Services_content 
+{
+    flex-direction: column;
+}
+.Services .Services_content .img_left
+{
+    display: none;
+}
+.Awesome .Awesome_img img
+{
+width: 100%;
+}
+.Awesome .container 
+{
+    grid-gap: 100px 30px;
+}
+.Awesome .Awesome_content 
+{
+    transform: translateY(10px);
+}
+footer .footer_one > input 
+{
+    transform: translate(0px,50px);
+}
+}
+/* ===================================== */
+@media (max-width:768px)
+{
+
+.appartiments .cont
+{
+grid-template-columns: 100%;
+}
+.appartiments .cont .appart_section_content
+{
+    margin: 20px auto;
+    width:400px;
+}
+.appartiments .container:last-of-type form
+{
+    display: none;
+}
+.agents .appart_section_content
+{
+    margin: 0px auto;
+}
+.work .work_sections .work_info 
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.Awesome .container 
+{
+    grid-template-columns: minmax(100px,1fr);
+    grid-gap: 0px;
+}
+.Awesome .Awesome_img img
+{
+    width: 100%;
+    height: 350px;
+}
+.Awesome .Awesome_img 
+{
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+.Awesome .Awesome_content:nth-child(3)
+{
+text-align: left;
+}
+.Awesome .Awesome_img:nth-child(4)
+{
+text-align: left;
+}
+footer .footer_one
+{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+footer .footer_one > input 
+{
+    transform: translate(0px,50px);
+}
+footer .footer_two 
+{
+    padding-top: 10px;
+ grid-template-columns: 100%;
+ column-gap: 30px;
+}
+footer .footer_two .footer_two_right
+{
+        display: grid;
+       grid-template-columns: repeat(2,minmax(100px,1fr));
+       grid-template-rows: repeat(2,minmax(100px,1fr));
+}
+}
+
+
+/* End media Query */
+/* ======================================= */
+/* ======================================= */

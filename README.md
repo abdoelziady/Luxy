@@ -1,0 +1,2 @@
+# Luxy
+Simple Website
